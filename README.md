@@ -37,29 +37,12 @@ A powerful AI-driven medical chatbot built with **Retrieval-Augmented Generation
 |-----------------|--------------------------------------|
 | Backend         | Python, Flask / FastAPI             |
 | Frontend        | HTML, CSS, JavaScript               |
-| AI/NLP          | OpenAI API / Transformers           |
+| AI/NLP          | Google API / Transformers           |
 | Database        | PostgreSQL                          |
 | Auth            | bcrypt / Flask-Login                |
-| Image Analysis  | TensorFlow / PyTorch                |
+| Image Analysis  | Groq Vision LLM                     |
 | Deployment      | Streamlit / Docker / Render / Heroku|
 
----
-
-## 📁 Project Structure
-
-```
-Medical-Chat-Bot-Using-RAG/
-├── app.py                  # Main server script
-├── chatbot/                # RAG-based chatbot logic
-├── dashboard/              # User interface & dashboards
-├── auth/                   # Login and registration modules
-├── db/                     # PostgreSQL DB connection and schema
-├── analyzer/               # Image processing modules
-├── static/                 # Static files (CSS, JS)
-├── templates/              # HTML templates
-├── requirements.txt
-└── README.md
-```
 
 ---
 
@@ -87,7 +70,7 @@ python app.py
 
 1. Install PostgreSQL.
 2. Create a database `MedicalBotDB`.
-3. Update the connection in `db/config.py`:
+
 
 ```python
 DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/MedicalBotDB"
